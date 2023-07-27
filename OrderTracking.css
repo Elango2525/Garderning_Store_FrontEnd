@@ -1,0 +1,105 @@
+.order-tracking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .order-tracking-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .order-tracking-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-tracking-container label {
+    margin-bottom: 10px;
+  }
+  
+  .order-tracking-container input[type='text'] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .order-tracking-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .order-tracking-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-tracking-container .tracking-status {
+    margin-top: 20px;
+  }
+  
+  .order-tracking-container .tracking-status h3 {
+    margin-bottom: 10px;
+  }
+  
+  .order-tracking-container .tracking-status p {
+    font-weight: bold;
+  }
+  /* Existing CSS styles */
+
+.status-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    height: 100px;
+  }
+  
+  .status-dot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    width: 80px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
+  
+  .status-dot.active {
+    opacity: 1;
+  }
+  
+  .status-dot .dot-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .status-dot .dot-status {
+    margin-top: 5px;
+  }
+  
+  /* Animation classes */
+  .status-dot.active {
+    animation: pulse-animation 1s ease-in-out infinite;
+  }
+  
+  /* Keyframe animation */
+  @keyframes pulse-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  

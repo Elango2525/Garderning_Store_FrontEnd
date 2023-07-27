@@ -1,0 +1,32 @@
+/* Library.css */
+
+.book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .book-row {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .book-container1 {
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .book-cover1 {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .book-details1 {
+    margin-top: 10px;
+  }
+  
+  /* Add more styles as per your requirements */
+  

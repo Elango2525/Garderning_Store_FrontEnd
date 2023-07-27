@@ -1,0 +1,76 @@
+/* BankOffers.css */
+
+.bank-offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .bank-offer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  bank-logo {
+    width: 30px; /* Set the desired width for the bank logo */
+    height: 30px; /* Set the desired height for the bank logo */
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bank-logo img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .bank-details {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  .bank-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .bank-details p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .bank-offer:hover {
+    transform: scale(1.05);
+  }
+  
+  .animated-text {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  

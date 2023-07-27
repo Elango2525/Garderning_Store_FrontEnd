@@ -1,0 +1,282 @@
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-image: url('');
+}
+.login-container:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('file:///C:/Users/Elango/Downloads/Green%20Bright%20Summer%20Plant%20Leaves%20Desktop%20Wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  
+  z-index: -1;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-family: cursive;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='radio'] {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f5e7c3;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  font-family: cursive;
+  color: #333;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='radio']:focus {
+  outline: none;
+  background-color: #e0e0e0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='password']:hover,
+input[type='radio']:hover {
+  background-color: #e9e9e9;
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='password']::placeholder {
+  color: #999;
+}
+
+button[type='submit'] {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: system-ui;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.social-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-buttons button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.google-button {
+  background-color: #db4437;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+}
+
+.submit {
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.apple-button {
+  background-color: #000000;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+/* Custom radio buttons */
+.gender-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gender-input label {
+  position: relative;
+  cursor: pointer;
+  font-weight: normal;
+  padding-left: 24px;
+  user-select: none;
+}
+
+.gender-input label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.gender-input input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.gender-input input[type='radio']:checked + label:before {
+  background-color: #007bff;
+}
+
+.gender-input label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gender-input input[type='radio']:checked + label:after {
+  opacity: 1;
+}
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.error-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.error-popup h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.error-popup ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.error-popup ul li {
+  margin-bottom: 5px;
+}
+
+.error-popup-close {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-popup-close:hover {
+  background-color: #0056b3;
+}
+

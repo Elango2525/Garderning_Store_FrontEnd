@@ -1,0 +1,241 @@
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .coupon-code-tab,
+  .scratch-card,
+  .more-offers {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .coupon-code-tab h2,
+  .scratch-card h2,
+  .more-offers h2 {
+    color: #333;
+  }
+  
+  .coupon-code-tab ul,
+  .more-offers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .coupon-code-tab ul li,
+  .more-offers ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .scratch-card p {
+    margin-top: 10px;
+  }
+  
+  .scratch-card-image {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .scratch-card-image:hover {
+    transform: scale(1.1);
+  }
+  .offers-container {
+    /* ... Your existing styles ... */
+  }
+  
+  .coupon-code-tab {
+    /* ... Your existing styles for coupon-code-tab ... */
+  }
+  
+  .scratch-card {
+    /* ... Your existing styles for scratch-card ... */
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .scratch-card h2 {
+    /* ... Your existing styles for the heading ... */
+  }
+  
+  .scratch-card p {
+    /* ... Your existing styles for the paragraph ... */
+  }
+  
+  .scratch-card-image {
+    /* ... Your existing styles for scratch-card-image ... */
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .scratch-card-container {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+  }
+  
+  .scratch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray; /* Replace with your scratch card color */
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .scratched-image {
+    opacity: 1;
+  }
+  
+  .more-offers {
+    /* ... Your existing styles for more-offers ... */
+  }
+  .offers-container {
+    /* ... Your existing styles for the offers container ... */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .coupon-code-tab {
+    /* ... Your existing styles for coupon-code-tab ... */
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scratch-card {
+    /* ... Your existing styles for scratch-card ... */
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scratch-card h2 {
+    /* ... Your existing styles for the heading ... */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .scratch-card p {
+    /* ... Your existing styles for the paragraph ... */
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .scratch-card-image {
+    /* ... Your existing styles for scratch-card-image ... */
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .scratch-card-container {
+    /* ... Your existing styles for scratch-card-container ... */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .scratch-overlay {
+    /* ... Your existing styles for scratch-overlay ... */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+  }
+  
+  .scratch-instructions {
+    /* ... Your existing styles for scratch-instructions ... */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .scratched-card {
+    /* ... Your existing styles for scratched-card ... */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .animated-text {
+    /* ... Your existing styles for animated-text ... */
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .more-offers {
+    /* ... Your existing styles for more-offers ... */
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coupon-code-tab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Example animation on hover for the scratch-card */
+  .scratch-card-container:hover .scratch-card-image {
+    transform: scale(1.1);
+  }
+  
+  /* Example animation for the scratched card reveal */
+  .scratched-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

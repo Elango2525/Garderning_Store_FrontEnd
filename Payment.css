@@ -1,0 +1,332 @@
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.payment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-body label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.payment-body input,
+.payment-body select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.payment-body button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.payment-body button:hover {
+  background-color: #45a049;
+}
+
+.payment-methods,
+.payment-methods-inner {
+  margin-top: 20px;
+}
+
+.payment-method,
+.payment-method-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.payment-method input[type="radio"],
+.payment-method-inner input[type="radio"] {
+  display: none;
+}
+
+.payment-method label,
+.payment-method-inner label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-method label:before,
+.payment-method-inner label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.payment-method input[type="radio"]:checked + label:before,
+.payment-method-inner input[type="radio"]:checked + label:before {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.payment-method label:after,
+.payment-method-inner label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.payment-method input[type="radio"]:checked + label:after,
+.payment-method-inner input[type="radio"]:checked + label:after {
+  opacity: 1;
+  background-color: #fff;
+}
+
+.success-animation,
+.error-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.success-animation {
+  background-color: #4caf50;
+}
+
+.error-animation {
+  background-color: #f44336;
+}
+
+.success-animation .tick {
+  font-size: 48px;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.success-animation .tick:before,
+.success-animation .tick:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 5px;
+  border-radius: 2px;
+}
+
+.success-animation .tick:before {
+  height: 24px;
+  transform: rotate(45deg);
+  top: 45%;
+  left: 35%;
+}
+
+.success-animation .tick:after {
+  height: 12px;
+  transform: rotate(-45deg);
+  top: 55%;
+  left: 45%;
+}
+
+.error-animation .error-icon {
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.error-animation .error-icon:before,
+.error-animation .error-icon:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 5px;
+  border-radius: 2px;
+}
+
+.error-animation .error-icon:before {
+  height: 24px;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-animation .error-icon:after {
+  height: 24px;
+  transform: rotate(-45deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success-animation p,
+.error-animation p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.payment-method-inner.gpay label {
+  color: #4285f4;
+}
+
+.payment-method-inner.paytm label {
+  color: #ff9800;
+}
+
+.payment-method-inner.phonepe label {
+  color: #5856d6;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 5vh;
+  padding: 1px 1px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #333;
+  transition: all 0.2s ease;
+}
+
+.custom-select.open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-select.open select {
+  animation: slide-down 0.2s ease;
+}
+
+@keyframes place-order-bg {
+  0% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #45a049;
+  }
+  100% {
+    background-color: #4caf50;
+  }
+}
+
+.place-order-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.place-order-btn:hover {
+  background-color: #45a049;
+}
+
+.place-order-btn:active {
+  animation-name: place-order-bg;
+}
+
+.make-payment-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.make-payment-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .payment-card {
+    width: 90%;
+  }
+}

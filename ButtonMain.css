@@ -1,0 +1,85 @@
+/* ButtonMain.css */
+.buttonMainer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/326/334/original/gradient-light-color-background-graphic-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+  
+    /* Add fade-in animation to the background */
+    animation: fadeIn 2s;
+  }
+  
+  /* Add keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Button styles with hover animation */
+  .buttondd,
+  .buttondd1,
+  .buttondd2,
+  .buttondd3 {
+    background-color: #07eeff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .buttondd {
+    background-color: green;
+  }
+  
+  .buttondd1 {
+    background-color: gray;
+  }
+  
+  .buttondd2 {
+    background-color: blue;
+    color: #ffffff;
+  }
+  
+  .buttondd3 {
+    background-color: red;
+  }
+  
+  /* Animated Button Styles */
+  .buttondd:hover,
+  .buttondd1:hover,
+  .buttondd2:hover,
+  .buttondd3:hover {
+    background-color: #0056b3;
+    /* Add hover animation */
+    animation: pulse 0.5s ease-in-out infinite;
+  }
+  
+  /* Add keyframes for hover animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
